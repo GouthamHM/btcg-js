@@ -1,0 +1,30 @@
+{
+  "name": "btcg-js",
+  "version": "0.0.1",
+  "description": "A NPM package to retrive Bitcoin data",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"babel ./src -d ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goutham-asu/btcg-js.git"
+  },
+  "keywords": [
+    "npm",
+    "nodejs",
+    "bitcoin",
+    "javascript"
+  ],
+  "author": "Goutham Hanumanthappa Manjunatha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goutham-asu/btcg-js/issues"
+  },
+  "homepage": "https://github.com/goutham-asu/btcg-js#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
