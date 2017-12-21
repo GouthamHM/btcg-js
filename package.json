@@ -1,6 +1,6 @@
 {
   "name": "btcg-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A NPM package to retrive Bitcoin data",
   "main": "build/index.js",
   "scripts": {
