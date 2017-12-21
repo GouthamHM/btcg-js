@@ -4,9 +4,10 @@
   "description": "A NPM package to retrive Bitcoin data",
   "main": "build/index.js",
   "scripts": {
-    "test": "mocha --require babel-core/register",
+    "test": "nyc mocha --require babel-core/register",
     "build": "npm run lint && babel ./src -d ./lib",
     "lint": "eslint ./src"
+
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,13 @@
     "eslint": "^4.13.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "nyc": "^11.4.1"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
   }
 }
