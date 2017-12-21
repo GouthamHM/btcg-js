@@ -4,8 +4,8 @@ node_js:
 - stable
 script:
 - npm test
-after_success:
-- npm run report-coverage
+before_deploy:
+- npm run build
 deploy:
   skip_cleanup: true
   provider: npm
