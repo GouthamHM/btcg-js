@@ -50,5 +50,7 @@
       "pre-commit": "npm run standard"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "https": "^1.0.0"
+  }
 }
