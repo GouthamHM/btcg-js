@@ -11,8 +11,8 @@ const testSamples = [
 describe('Array', () => {
   testSamples.forEach((sample) => {
     it(sample.desc,() =>{
-     assert.equal(getCurrentPrice(sample.input),sample.expectedResult);
-   });
+      assert.equal(getCurrentPrice(sample.input),sample.expectedResult);
+    });
   });
 });
 
