@@ -1,0 +1,17 @@
+sudo: false
+language: node_js
+node_js:
+- stable
+script:
+- npm test
+after_success:
+- npm run report-coverage
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: gouthamhm94@gmail.com
+  api_key:
+    secure: GoCqv5E8J7C1eGKSKuhc4lPeO1s6PFcRbEAneKAik4J6k8zdMxf9F2dPV/lqwBYQsvcxearq+ip83xCHlXmS2JuFqNxV+xY1Ox4Pq1Zj1SG+lsMIeHV9t4e8EDhQv55s0v5XVhxKtgbJF+e+WJsM+0Ei4dglzylsDibhqOQ8q2eDYrFYkxjCbM2QRR7+3t+yP6QxgMyXiuh01Cjc/4rZ3Oy3m/XWdYSTEAXzzINkbBBhXl6zHHyYiDvE4kGL6RcCh1QJl7XTIGSfvGCqbwNMXqInRzQv+H1NM6o3nZKcgH7qA5MphVR6Hqy8hVQ1sDSrU1zxeKT3sEjGU89SOnP1XY/a6oAWAikX3tCQO3965dsRBbiLAVtLvQekaqEvVleLK66SYpUUHdU57oA/rMewG3b2zYLnC0mxlfJQoIup3vADPU1Sidi7uNpMOonb5yQTU8dW7JfT3m3tq4/I/YqbIBMwzuaf6pu6EzsFaXm5ni64ocy5AEOgVwssWG8RQKTOn2yNMFop2OnsjDAzYtULX/Q6HSi+6eAi28mMKpBpnc3qkYPo8ECdZVltQH12cAMveEMq9hHHWDaUNhUjILDWdWf9dWfHkS+61DZ5wTvqjEuXNTkCD+OpJi4y8e41oTot3O3B1tcVBiA4OGCkYM3g3Ky5/KBApTBXclQhg5KpC/A=
+  on:
+    tags: true
+    repo: goutham-asu/btcg-js
