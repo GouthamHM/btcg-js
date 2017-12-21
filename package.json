@@ -6,7 +6,8 @@
   "scripts": {
     "test": "nyc mocha --require babel-core/register",
     "build": "npm run lint && babel ./src -d ./lib",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "prepublish": "npm run build"
 
   },
   "repository": {
